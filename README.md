@@ -34,17 +34,16 @@ Before we run the project, make sure that you are having MongoDB in your local s
 ![image](https://user-images.githubusercontent.com/90135094/200800017-915b93db-3e6c-465e-a014-a32739a8e8db.png)
 
 
-# Step 1: Clone the repository
-git clone https://github.com/sethusaim/Sensor-Fault-Detection.git
 
-# Step 2- Create a conda environment after opening the repository
+
+# Step 1- Create a conda environment after opening the repository
 conda create -n sensor python=3.7.6 -y
 conda activate sensor
 
-# Step 3 - Install the requirements
+# Step 2 - Install the requirements
 pip install -r requirements.txt
 
-# Step 4 - Export the environment variable
+# Step 3 - Export the environment variable
 export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
 
 export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
@@ -53,13 +52,13 @@ export AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION>
 
 export MONGODB_URL="mongodb+srv://<username>:<password>@ineuron-ai-projects.7eh1w4s.mongodb.net/?retryWrites=true&w=majority"
   
-# Step 5 - Run the application server
+# Step 4 - Run the application server
 python app.py
   
-# Step 6. Train application
+# Step 5. Train application
 http://localhost:8080/train
   
-# Step 7. Prediction application
+# Step 6. Prediction application
 http://localhost:8080/predict
   
 # Run locally
